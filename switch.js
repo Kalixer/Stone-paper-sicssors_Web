@@ -74,7 +74,7 @@ var max = 3;
 
 function aleatorio() { 
     numero_r = Math.floor(Math.random() * (max - min + 1)) + min;
-    console.log("Elección de la máquina" + numero_r);
+    console.log("Elección de la máquina: " + numero_r);
 }
 
 
