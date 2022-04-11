@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin: 1.8rem;
+    /* border: 2px solid green; */
+}
+.user-selection{
+    text-align: center;
+}
+.user-selection .message {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.8rem;
+}
+.box-container{
+    margin: 0 10vw;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+    width: 80vw;
+    
+}
+.box{
+    border: .5rem solid #444444;
+    background-color: white;
+    color: black;
+
+    border-radius: 1rem;
+    margin: .5rem 2rem;
+    height: 10rem;
+    width: 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.box1{
+    color: black;
+    background-color: gray;
+}
+.box2{
+    color: black;
+    background-color: gray;
+}
+.box3{
+    color: black;
+    background-color: gray;
+}
+
+.button-container{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+
+    /* border: 2px solid orange; */
+}
+.submit-button{
+    font-weight: bold;
+    font-size: medium;
+
+    margin: 3rem;
+    padding: 1rem;
+    width: 10rem;
+    background-color: #c7c7c7;
+    border: .3rem solid #444444;
+    border-radius: 1.5rem;
+}
+
+.machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-wrapper{
+    width: 6rem;
+    height: 6rem;
+}
+.loader{
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #162534;
+    border-top-color: #4bc8eb;
+    border-bottom-color: #f13a8f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+.loader-inner{
+    border-top-color: #36f372;
+    border-bottom-color: #fff;
+    animation-duration: 2.5s;
+
+}
+@keyframes rotate {
+    0%{
+        transform: scale(1) rotate(360deg)
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg)
+    }
+    100%{
+        transform: scale(1) rotate(360deg)
+    }
+}
+
+
+
+
+/* border: 2px solid orange; */
