@@ -20,13 +20,13 @@ const options = {
 
 let user_select = {
     numero: 0,
-    lexi: 'random'
+    lexi: 'Nothing'
 };
 let machine_select = {
     numero: 0,
     lexi: 'random',
 };
-let result = 'random';
+let result = 'Nani?';
 
 
 function select_rock() {
@@ -65,8 +65,8 @@ function boton() {
 
     machine_select.numero = aleatorio(1, 3);
 
-    console.log(user_select.numero)
-    console.log(machine_select.numero)
+    // console.log(user_select.numero)
+    // console.log(machine_select.numero)
 
     if(user_select.numero == options.rock){
         switch(machine_select.numero){
@@ -108,14 +108,14 @@ function boton() {
         }
     }
 
-    console.log(`You: ${user_select.lexi}, ${user_select.numero}`)
-    console.log(`Machine: ${machine_select.lexi}, ${machine_select.numero}`)
+    // console.log(`You: ${user_select.lexi}, ${user_select.numero}`)
+    // console.log(`Machine: ${machine_select.lexi}, ${machine_select.numero}`)
 
     setTimeout(() => {
         maquina.innerHTML = `
-        <div class="box">${user_select.lexi}</div>
-        <div class="box">${result}</div>
-        <div class="box">${machine_select.lexi}</div>
+        <div class="box" style="background-color:green">${user_select.lexi}</div>
+        <div class="box" style="background-color:red">${result}</div>
+        <div class="box" style="background-color:grey">${machine_select.lexi}</div>
         `
     }, 3000)
 }
@@ -140,30 +140,10 @@ function aleatorio(min, max) {
 
 
 
-// if(usuario == piedra){
-//     if(maquina == piedra){
-//         console.log("Empate | Maquina: piedra");
-//     }else if(maquina == papel){
-//         console.log("Perdiste | Tú: piedra - Maquina: papel")
-//     } else if(maquina == tijera){
-//         console.log("Ganaste | Tú: piedra - Maquina: tijera")
-//     }
-// }
-// if(usuario == papel){
-//     if(maquina == piedra){
-//         console.log("Ganaste | Tú: papel - Maquina: piedra")
-//     }else if(maquina == papel){
-//         console.log("Empate | Tú: papel - Maquina: papel")
-//     } else if(maquina == tijera){
-//         console.log("Perdiste | Tú: papel - Maquina: tijera");
-//     }
-// }
-// if(usuario == tijera){
-//     if(maquina == piedra){
-//         console.log("Perdiste | Tú: tijera - Maquina: piedra");
-//     }else if(maquina == papel){
-//         console.log("Ganaste | Tú: tijera - Maquina: papel")
-//     } else if(maquina == tijera){
-//         console.log("Empate | Tú: tijera - Maquina: tijera")
-//     }
-// }
+/* Ideas
+
+    Poner imagenes para representar las elecciones
+    cambiar el color de las cajas
+
+
+*/
