@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
+    <title>U vs Machine</title>
 </head>
 <body>
-    <h1>Vamos a Jugar</h1>
-    <h2>Elige</h2>
-    <h3>Piedra = 1 <br/> Papel = 2 <br/> Tijera = 3</h3>
-    <p>
-        <input type="number" id="seleccion_usuario">
-        <input type="button" value="Play" id="boton">
-    </p>
-    <script src="switch.js"></script>
+    <h1 class="title">Let's Play kiddo</h1>
+    
+    <div class="user-selection">
+        <p class="message">Choose your weapon</p>
+
+        <div class="box-container">
+            <div class="box box1" id="rock">Rock</div>
+            <div class="box box2" id="paper">Paper</div>
+            <div class="box box3" id="scissors">Scissors</div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" class="submit-button" id="s_button">Shoot!!</button>
+    </div>
+
+    <div class="machine" id="machine">
+        
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
