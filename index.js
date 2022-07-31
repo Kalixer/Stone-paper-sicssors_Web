@@ -65,8 +65,6 @@ function boton() {
 
     machine_select.numero = aleatorio(1, 3);
 
-    // console.log(user_select.numero)
-    // console.log(machine_select.numero)
 
     if(user_select.numero == options.rock){
         switch(machine_select.numero){
@@ -74,10 +72,10 @@ function boton() {
                 result = 'Even'
             break
             case options.paper :
-                result = 'Lose'
+                result = 'You Lose'
             break
             case options.scissors :
-                result = 'Winner'
+                result = 'You Win!'
             break
         }
     }
@@ -108,9 +106,6 @@ function boton() {
         }
     }
 
-    // console.log(`You: ${user_select.lexi}, ${user_select.numero}`)
-    // console.log(`Machine: ${machine_select.lexi}, ${machine_select.numero}`)
-
     setTimeout(() => {
         maquina.innerHTML = `
         <div class="box" style="background-color:green">${user_select.lexi}</div>
@@ -140,10 +135,3 @@ function aleatorio(min, max) {
 
 
 
-/* Ideas
-
-    Poner imagenes para representar las elecciones
-    cambiar el color de las cajas
-
-
-*/
